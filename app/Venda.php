@@ -10,8 +10,8 @@ class Venda extends Model
     protected $table = "vendas";
     protected $primaryKey = "id";
 
-    function usuario(){
-    	return $this->belongsTo('App\Usuario', 'id_usuario', 'id');
+    function cliente(){
+    	return $this->belongsTo('App\Cliente', 'id_cliente', 'id');
     }
 
 }
